@@ -1,0 +1,88 @@
+<html>
+	<style>
+		body{
+			background-color: black;
+			font-family: "Lucida Console";
+			color: green;
+			font-size: 14px;
+			margin: 8px;
+		}
+
+		.header-div{
+			margin-bottom: 14px;
+			height: 40px;
+			widows: 100%;
+		}
+
+		.body-div{
+			word-wrap: break-word;
+		}
+		
+		input:focus, textarea:focus {
+		    outline: none;
+		}
+
+		.main-input{
+			width: 98%;
+			background-color: black;
+			font-family: "Lucida Console";
+			color: green;
+			border: 0;
+			font-size: 14px;
+		}
+
+		#divInput{
+			background-color: black;
+			width: 100%;
+		}
+		.line-server-yellow{
+			background-color: black;
+			font-family: "Lucida Console";
+			color: yellow;
+			border: 0;
+			margin-bottom: 2px;
+		}
+
+		.line-server-red{
+			background-color: black;
+			font-family: "Lucida Console";
+			color: red;
+			border: 0;
+			margin-bottom: 2px;
+		}
+
+		.line-server-orange{
+			background-color: black;
+			font-family: "Lucida Console";
+			color: orange;
+			border: 0;
+			margin-bottom: 2px;
+		}
+
+		.line-user-green{
+			background-color: black;
+			font-family: "Lucida Console";
+			color: green;
+			border: 0;
+			margin-bottom: 2px;
+		}
+	</style>
+	<title>Console Game</title>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="/socket.io/socket.io.js"></script>
+		<script src="index.js"></script>
+		<script src="socketCode.js"></script>
+	</head>
+	<body>
+		<div class="header-div">
+			Console Game [Version 0.0.1]<br/>
+			(c) 2019 Blaze Sterling. All rights reserved.
+		</div>
+		<div class="body-div">
+			<div id="divOutput">
+			</div>
+			<div id="divInput">><input type="text" class="main-input" /></div>
+		</div>
+	</body>
+</html>
